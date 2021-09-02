@@ -55,9 +55,9 @@ const searchBook = () => {
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title text-blue-900">${book.title}</h5 >
+                                    <h5 class="card-title text-primary">${book.title}</h5 >
                                     <p class="card-text">by ${book.author_name}</p>
-                                    <p class="card-text">Publiser: ${book.publisher}</p>
+                                    <p class="card-text"><span class='text-danger'>Publisher:</span> ${book.publisher}</p>
                                     <p class="card-text"><small class="text-muted">First published in ${book.first_publish_year} at ${book.publish_place} </small></p>
                                     <p class="card-text"><small class="text-muted">It's have ${book.edition_count} edition </small></p>
                                     <a target="_blank" href="https://openlibrary.org${book.key}"><button class="btn btn-outline-primary">More About...</button></a>
@@ -79,9 +79,9 @@ const searchBook = () => {
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title text-blue-900">${book.title}</h5 >
+                                    <h5 class="card-title text-primary">${book.title}</h5 >
                                     <p class="card-text">by ${book.author_name}</p>
-                                    <p class="card-text">Publiser: ${book.publisher}</p>
+                                    <p class="card-text"><span class='text-danger'>Publisher:</span> ${book.publisher}</p>
                                     <p class="card-text"><small class="text-muted">First published in ${book.first_publish_year} at ${book.publish_place} </small></p>
                                     <p class="card-text"><small class="text-muted">It's have ${book.edition_count} edition </small></p>
                                     <a target="_blank" href="https://openlibrary.org${book.key}"><button class="btn btn-outline-primary">More About...</button></a>
