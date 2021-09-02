@@ -19,14 +19,18 @@ const searchBook = () => {
             searchDetailsResult.classList.add('text-center');
             if (data.numFound === 0) {
                 searchDetailsResult.innerHTML = `
-                    <h2><span class = 'text-danger'>'${data.numFound}'</span> books found about <span class = 'text-danger'>"${searchText}"</span></h2>
-                    <h2 class="text-danger">Sorry! Please search with a proper book name.</h2>
+                    <div class="container border border-danger rounded-3 border-3">
+                        <h2><span class = 'text-danger'>'${data.numFound}'</span> books found about <span class = 'text-danger'>"${searchText}"</span></h2>
+                        <h2 class="text-danger">Sorry! Please search with a proper book name.</h2>
+                    </div>
                 `;
             }
             else {
                 searchDetailsResult.innerHTML = `
-                            <h1>You are searching with the keyword: <span style="color: rgba(22, 9, 160, 0.623)">${searchText}</span></h1>
-                            <h2><span style="color: rgba(22, 9, 160, 0.623)">${data.numFound}</span> books found about "${searchText}"</h2>
+                    <div class="container border border-primary rounded-3 border-3">
+                        <h1>You are searching with the keyword: <span style="color: rgba(22, 9, 160, 0.623)">${searchText}</span></h1>
+                        <h2><span style="color: rgba(22, 9, 160, 0.623)">${data.numFound}</span> books found about "${searchText}"</h2>
+                    </div>
                 `;
             }
             searchDetails.appendChild(searchDetailsResult);
