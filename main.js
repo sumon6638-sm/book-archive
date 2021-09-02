@@ -3,7 +3,7 @@ document.getElementById('spinner').style.display = "none";
 const searchBook = () => {
     const searchInput = document.getElementById('searchInput');
     const searchText = searchInput.value;
-    const url = `http://openlibrary.org/search.json?q=${searchText}`;
+    const url = `https://openlibrary.org/search.json?q=${searchText}`;
 
     document.getElementById('spinner').style.display = "block";
     fetch(url)
