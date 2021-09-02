@@ -58,8 +58,8 @@ const searchBook = () => {
                                     <h5 class="card-title text-primary">${book.title}</h5 >
                                     <p class="card-text">by ${book.author_name}</p>
                                     <p class="card-text"><span class='text-danger'>Publisher:</span> ${book.publisher}</p>
-                                    <p class="card-text"><small class="text-muted">First published in ${book.first_publish_year} at ${book.publish_place} </small></p>
-                                    <p class="card-text"><small class="text-muted">It's have ${book.edition_count} edition </small></p>
+                                    <p class="card-text"><small class="text-muted">First published in <span class='text-success fw-bold'>${book.first_publish_year}</span> at <span class='text-success fw-bold'>${book.publish_place}</span> </small></p>
+                                    <p class="card-text"><small class="text-muted">It's have <span class='text-success fw-bold'>${book.edition_count}</span> edition </small></p>
                                     <a target="_blank" href="https://openlibrary.org${book.key}"><button class="btn btn-outline-primary">More About...</button></a>
                                 </div >
                             </div >
@@ -82,8 +82,8 @@ const searchBook = () => {
                                     <h5 class="card-title text-primary">${book.title}</h5 >
                                     <p class="card-text">by ${book.author_name}</p>
                                     <p class="card-text"><span class='text-danger'>Publisher:</span> ${book.publisher}</p>
-                                    <p class="card-text"><small class="text-muted">First published in ${book.first_publish_year} at ${book.publish_place} </small></p>
-                                    <p class="card-text"><small class="text-muted">It's have ${book.edition_count} edition </small></p>
+                                    <p class="card-text"><small class="text-muted">First published in <span class='text-success fw-bold'>${book.first_publish_year}</span> at <span class='text-success fw-bold'>${book.publish_place}</span> </small></p>
+                                    <p class="card-text"><small class="text-muted">It's have <span class='text-success fw-bold'>${book.edition_count}</span> edition </small></p>
                                     <a target="_blank" href="https://openlibrary.org${book.key}"><button class="btn btn-outline-primary">More About...</button></a>
                                 </div >
                             </div >
